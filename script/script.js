@@ -31,10 +31,17 @@ function generatePassword() {
   
   // Prompt user for password length. Make sure input is a number of correct size.
   while (true) {
-    var passLength = prompt("How long would you like the password to be? Password must be between 8 and 128 characters.");
+    var passLength = prompt("How long would you like the password to be? Password must be between 8 and 128 characters. Type 'q' to exit this dialogue without setting a password.");
+    if (passLength.toLowerCase() === 'q') {
+      return password;
+    }
     passLength = Number(passLength);
     if (isNaN(passLength)) {
       alert("Must enter number!");
+      continue;
+    }
+    if (parseInt(passLength) - Number(passLength) !== 0) {
+      alert("Only integers are accepted!");
       continue;
     }
     if (passLength < 8 || passLength > 128) {
