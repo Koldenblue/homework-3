@@ -14,9 +14,10 @@ generateBtn.addEventListener("click", writePassword);
 
 
 function generatePassword() {
-  // Initialize empty password and empty array for characters that may go into password.
+  // Initialize empty password, empty array for characters that may go into password, and password length variable.
   var password = '';
   var characterArray = [];
+  var passLength;
 
   // Ask user for types of characters to include in password.
   var lower = confirm("Would you like to include lowercase characters?");
@@ -31,7 +32,7 @@ function generatePassword() {
   
   // Prompt user for password length. Make sure input is a number of correct size.
   while (true) {
-    var passLength = prompt("How long would you like the password to be? Password must be between 8 and 128 characters. Type 'q' to exit this dialogue without setting a password.");
+    passLength = prompt("How long would you like the password to be? Password must be between 8 and 128 characters. Type 'q' to exit this dialogue without setting a password.");
     if (passLength.toLowerCase() === 'q') {
       return password;
     }
@@ -88,7 +89,6 @@ function generatePassword() {
       characterArray.push(String.fromCharCode(i));
     }
   }
-
 
   // Now characterArray is populated with characters that are candidates for the array.
   // select random characters from character array and add them to the generated password, one by one.
