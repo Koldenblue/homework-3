@@ -3,13 +3,15 @@ Password Generator
 
 For this project, JavaScript was written to the specifications given in the Develop/Readme.md file. The index.html and style.css files were provided, and have been completely unchanged.
 
-\n\n\n
+<br>
+<br>
 
-![image](https://user-images.githubusercontent.com/64618290/88606055-86fda980-d030-11ea-8d51-598ede46c47a.png)
+![image](https://user-images.githubusercontent.com/64618290/88606894-af86a300-d032-11ea-968d-b14821a6f140.png)
+
 
 The password generator page styling and layout was provided and left unchanged.
 
-\n\n\n\n
+<br><br><br><br>
 
 A JavaScript function, generatePassword(), was written in order to generate a random password anywhere from 8 to 128 characters in length. Characters can be alphanumeric or special characters, depending on user input. The function first prompts the user for desired parameters. It then populates an array with the appropriate characters. Finally, the function chooses random characters from the array to build the password.
 
