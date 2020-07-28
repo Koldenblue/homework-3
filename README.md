@@ -1,7 +1,7 @@
 # homework-3
 Password Generator
 
-For this project, JavaScript was written to the specifications given in the Develop/Readme.md file. The index.html and style.css files were provided, and have been completely unchanged.
+For this project, JavaScript was written to the specifications given in the Develop/Readme.md file. The Assets folder contains an image corresponding to the project goal. The index.html and style.css files were provided, and have been completely unchanged.
 
 <br>
 <br>
