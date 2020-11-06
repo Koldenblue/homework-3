@@ -4,8 +4,34 @@
   box-sizing: border-box;
 }
 
+#butterflies {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
 .jumbotron-fluid {
+  background-image: url('./Assets/butterflies-5552500_1920.png');
+  background-size: 80%;
+  background-position: -75% 30%;
+  background-repeat: no-repeat;
+  height: 40%;
   font-family: 'Dosis', sans-serif;
+  color: rgb(255, 145, 0);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+
+}
+
+.title-text {
+  position: relative;
+  left: 30px;
+}
+
+@media (max-height: 440px) {
+  .title-text {
+    bottom: 40px;
+  }
 }
 
 html,
@@ -19,6 +45,8 @@ body,
 body {
   font-family: 'Dosis', sans-serif;
   background-color: #f9fbfd;
+  background: rgb(255,238,252);
+  background: linear-gradient(18deg, rgb(241, 228, 252) 0%, rgb(209, 250, 255) 100%); 
 }
 
 .wrapper {
@@ -35,7 +63,7 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(300, 69%, 97%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -60,6 +88,7 @@ header {
 
 .card-footer {
   text-align: center;
+  background-color: azure;
 }
 
 .card-footer::before {
@@ -78,7 +107,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(80, 8, 175);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -92,6 +121,9 @@ header {
   cursor: pointer;
 }
 
+.btn:hover {
+  color: rgb(250, 137, 250);
+}
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
